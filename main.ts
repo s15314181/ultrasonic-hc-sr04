@@ -1,5 +1,5 @@
 let distance = 0
-basic.forever(function () {
+input.onGesture(Gesture.TiltLeft, function () {
     pins.digitalWritePin(DigitalPin.P9, 0)
     control.waitMicros(2)
     pins.digitalWritePin(DigitalPin.P10, 1)
